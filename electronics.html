@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子學 - Sensor Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">SENSOR<span class="logo-highlight">HUB</span></a>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首頁</a></li>
+                <li><a href="applications.html" class="nav-link">應用</a></li>
+                <li><a href="research.html" class="nav-link">研究</a></li>
+                <li><a href="news.html" class="nav-link">新聞</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link active">理論與原理 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="theories.html">感測器理論</a>
+                        <a href="structures.html">結構與原理</a>
+                        <a href="electronics.html">電子學</a>
+                        <a href="circuits.html">電路學</a>
+                        <a href="electromagnetics.html">電磁學</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="page-container">
+            <h1 class="page-title">電子學基礎</h1>
+
+            <div class="theory-section">
+                <h2>1. 半導體物理</h2>
+                <p>感測器的核心往往是半導體材料。PN 接面是光電二極體與許多感測器的基礎。</p>
+                <div class="formula-box">
+                    I = Is * (e^(Vd / nVt) - 1)
+                </div>
+                <p>二極體電流公式，其中 Is 為飽和電流，Vt 為熱電壓。</p>
+            </div>
+
+            <div class="theory-section">
+                <h2>2. 運算放大器 (Op-Amp)</h2>
+                <p>感測器訊號通常很微弱，需要透過運算放大器進行放大與調理。</p>
+                <ul>
+                    <li><strong>反相放大器:</strong> Vout = -(Rf / Rin) * Vin</li>
+                    <li><strong>非反相放大器:</strong> Vout = (1 + Rf / Rin) * Vin</li>
+                </ul>
+            </div>
+
+            <div class="theory-section">
+                <h2>3. 類比數位轉換 (ADC)</h2>
+                <p>將感測器的類比電壓訊號轉換為微控制器可讀取的數位訊號。</p>
+                <div class="formula-box">
+                    Resolution = Vref / (2^n)
+                </div>
+                <p>其中 n 為 ADC 的位元數 (Bit depth)。</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SENSOR<span class="logo-highlight">HUB</span></h3>
+                <p>探索感測技術的未來。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速連結</h4>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="applications.html">應用</a></li>
+                    <li><a href="research.html">研究</a></li>
+                    <li><a href="news.html">新聞</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>理論資源</h4>
+                <ul>
+                    <li><a href="theories.html">感測器理論</a></li>
+                    <li><a href="structures.html">結構與原理</a></li>
+                    <li><a href="electronics.html">電子學</a></li>
+                    <li><a href="electromagnetics.html">電磁學</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>聯絡我們</h4>
+                <p>Email: contact@sensorhub.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sensor Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

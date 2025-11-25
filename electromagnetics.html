@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電磁學 - Sensor Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">SENSOR<span class="logo-highlight">HUB</span></a>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首頁</a></li>
+                <li><a href="applications.html" class="nav-link">應用</a></li>
+                <li><a href="research.html" class="nav-link">研究</a></li>
+                <li><a href="news.html" class="nav-link">新聞</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link active">理論與原理 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="theories.html">感測器理論</a>
+                        <a href="structures.html">結構與原理</a>
+                        <a href="electronics.html">電子學</a>
+                        <a href="circuits.html">電路學</a>
+                        <a href="electromagnetics.html">電磁學</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="page-container">
+            <h1 class="page-title">電磁學基礎</h1>
+
+            <div class="theory-section">
+                <h2>1. 馬克斯威方程式 (Maxwell's Equations)</h2>
+                <p>描述電場、磁場與電荷、電流之間關係的四個方程式，是無線感測與遙測技術的理論基礎。</p>
+                <div class="formula-box">
+                    ∇ · E = ρ / ε₀<br>
+                    ∇ · B = 0<br>
+                    ∇ × E = -∂B / ∂t<br>
+                    ∇ × B = μ₀(J + ε₀∂E / ∂t)
+                </div>
+            </div>
+
+            <div class="theory-section">
+                <h2>2. 電磁波傳播</h2>
+                <p>雷達與無線通訊依賴電磁波在空間中的傳播。</p>
+                <div class="formula-box">
+                    c = 1 / √(μ₀ε₀)
+                </div>
+                <p>光速與介質的磁導率及電容率有關。</p>
+            </div>
+
+            <div class="theory-section">
+                <h2>3. 霍爾效應 (Hall Effect)</h2>
+                <p>當電流通過磁場中的導體時，會在垂直於電流與磁場的方向產生電壓差。這是霍爾感測器（用於測量磁場、電流與位置）的原理。</p>
+                <div class="formula-box">
+                    VH = (I * B) / (n * q * d)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SENSOR<span class="logo-highlight">HUB</span></h3>
+                <p>探索感測技術的未來。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速連結</h4>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="applications.html">應用</a></li>
+                    <li><a href="research.html">研究</a></li>
+                    <li><a href="news.html">新聞</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>理論資源</h4>
+                <ul>
+                    <li><a href="theories.html">感測器理論</a></li>
+                    <li><a href="structures.html">結構與原理</a></li>
+                    <li><a href="electronics.html">電子學</a></li>
+                    <li><a href="electromagnetics.html">電磁學</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>聯絡我們</h4>
+                <p>Email: contact@sensorhub.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sensor Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

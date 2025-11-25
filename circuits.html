@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電路學 - Sensor Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">SENSOR<span class="logo-highlight">HUB</span></a>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首頁</a></li>
+                <li><a href="applications.html" class="nav-link">應用</a></li>
+                <li><a href="research.html" class="nav-link">研究</a></li>
+                <li><a href="news.html" class="nav-link">新聞</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link active">理論與原理 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="theories.html">感測器理論</a>
+                        <a href="structures.html">結構與原理</a>
+                        <a href="electronics.html">電子學</a>
+                        <a href="circuits.html">電路學</a>
+                        <a href="electromagnetics.html">電磁學</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="page-container">
+            <h1 class="page-title">電路學基礎</h1>
+
+            <div class="theory-section">
+                <h2>1. 歐姆定律與克希荷夫定律</h2>
+                <p>電路分析的基石，用於計算感測器電路中的電壓與電流。</p>
+                <div class="formula-box">
+                    V = I * R
+                </div>
+                <p>KCL: 流入節點的電流總和等於流出電流總和。<br>KVL: 閉合迴路中的電壓升降總和為零。</p>
+            </div>
+
+            <div class="theory-section">
+                <h2>2. 惠斯登電橋 (Wheatstone Bridge)</h2>
+                <p>用於精確測量微小的電阻變化，常用於應變規 (Strain Gauge) 與熱敏電阻 (Thermistor) 電路。</p>
+                <div class="formula-box">
+                    Vout = Vin * (R2/(R1+R2) - R4/(R3+R4))
+                </div>
+                <p>當電橋平衡時，Vout = 0。</p>
+            </div>
+
+            <div class="theory-section">
+                <h2>3. 濾波器 (Filters)</h2>
+                <p>用於去除感測器訊號中的雜訊。</p>
+                <ul>
+                    <li><strong>低通濾波器 (Low Pass):</strong> 允許低頻訊號通過，去除高頻雜訊。</li>
+                    <li><strong>截止頻率:</strong> fc = 1 / (2πRC)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SENSOR<span class="logo-highlight">HUB</span></h3>
+                <p>探索感測技術的未來。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速連結</h4>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="applications.html">應用</a></li>
+                    <li><a href="research.html">研究</a></li>
+                    <li><a href="news.html">新聞</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>理論資源</h4>
+                <ul>
+                    <li><a href="theories.html">感測器理論</a></li>
+                    <li><a href="structures.html">結構與原理</a></li>
+                    <li><a href="electronics.html">電子學</a></li>
+                    <li><a href="electromagnetics.html">電磁學</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>聯絡我們</h4>
+                <p>Email: contact@sensorhub.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sensor Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

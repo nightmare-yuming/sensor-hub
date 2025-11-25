@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感測器理論 - Sensor Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">SENSOR<span class="logo-highlight">HUB</span></a>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首頁</a></li>
+                <li><a href="applications.html" class="nav-link">應用</a></li>
+                <li><a href="research.html" class="nav-link">研究</a></li>
+                <li><a href="news.html" class="nav-link">新聞</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link active">理論與原理 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="theories.html">感測器理論</a>
+                        <a href="structures.html">結構與原理</a>
+                        <a href="electronics.html">電子學</a>
+                        <a href="circuits.html">電路學</a>
+                        <a href="electromagnetics.html">電磁學</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="page-container">
+            <h1 class="page-title">感測器理論基礎</h1>
+
+            <div class="theory-section">
+                <h2>1. 定位感測 (Positioning)</h2>
+                <p>定位感測器用於確定物體在空間中的絕對或相對位置。常見技術包括 GPS、IMU (慣性測量單元) 與 UWB (超寬頻)。</p>
+                <ul>
+                    <li><strong>GPS:</strong> 利用衛星訊號的時間差計算位置。</li>
+                    <li><strong>IMU:</strong> 結合加速度計與陀螺儀，計算物體的姿態與位移。</li>
+                </ul>
+            </div>
+
+            <div class="theory-section">
+                <h2>2. 遙測 (Remote Sensing)</h2>
+                <p>遙測是指在不接觸物體的情況下，收集關於物體或區域的資訊。主要應用於地球觀測、氣象預報與軍事偵察。</p>
+                <ul>
+                    <li><strong>主動式遙測:</strong> 感測器發射能量（如雷達、LiDAR）並接收反射訊號。</li>
+                    <li><strong>被動式遙測:</strong> 感測器接收物體自然發出的輻射（如可見光攝影、熱紅外線）。</li>
+                </ul>
+            </div>
+
+            <div class="theory-section">
+                <h2>3. 環境光感 (Ambient Light)</h2>
+                <p>環境光感測器用於檢測周圍環境的光照強度，常用於調整螢幕亮度或控制照明系統。</p>
+                <div class="formula-box">
+                    I = Φ / A
+                </div>
+                <p>其中 I 為照度 (Lux)，Φ 為光通量 (Lumen)，A 為面積 (m²)。</p>
+            </div>
+
+            <div class="theory-section">
+                <h2>4. 紅外線 (Infrared)</h2>
+                <p>紅外線感測器利用紅外線輻射進行偵測，廣泛應用於夜視、溫度測量與氣體分析。</p>
+                <ul>
+                    <li><strong>PIR (被動紅外線):</strong> 偵測人體發出的熱輻射變化，用於防盜與自動照明。</li>
+                    <li><strong>IR 測距:</strong> 發射紅外線並測量反射強度或時間差來計算距離。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SENSOR<span class="logo-highlight">HUB</span></h3>
+                <p>探索感測技術的未來。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速連結</h4>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="applications.html">應用</a></li>
+                    <li><a href="research.html">研究</a></li>
+                    <li><a href="news.html">新聞</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>理論資源</h4>
+                <ul>
+                    <li><a href="theories.html">感測器理論</a></li>
+                    <li><a href="structures.html">結構與原理</a></li>
+                    <li><a href="electronics.html">電子學</a></li>
+                    <li><a href="electromagnetics.html">電磁學</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>聯絡我們</h4>
+                <p>Email: contact@sensorhub.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sensor Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

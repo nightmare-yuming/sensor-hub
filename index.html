@@ -1,13 +1,94 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sensor_hub</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Hub - 感測器中心</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                SENSOR<span class="logo-highlight">HUB</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">首頁</a></li>
+                <li><a href="applications.html" class="nav-link">應用</a></li>
+                <li><a href="research.html" class="nav-link">研究</a></li>
+                <li><a href="news.html" class="nav-link">新聞</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">理論與原理 <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="theories.html">感測器理論</a>
+                        <a href="structures.html">結構與原理</a>
+                        <a href="electronics.html">電子學</a>
+                        <a href="circuits.html">電路學</a>
+                        <a href="electromagnetics.html">電磁學</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>探索感測技術的未來</h1>
+            <p>匯集全球最新的感測器應用、前沿研究與產業新聞。從基礎理論到實際應用，為您提供最完整的技術資源。</p>
+            <div class="cta-buttons">
+                <a href="applications.html" class="btn btn-primary">探索應用</a>
+                <a href="research.html" class="btn btn-secondary">閱讀研究</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SENSOR<span class="logo-highlight">HUB</span></h3>
+                <p>探索感測技術的未來。提供最新的應用、研究與產業新聞。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速連結</h4>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="applications.html">應用</a></li>
+                    <li><a href="research.html">研究</a></li>
+                    <li><a href="news.html">新聞</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>理論資源</h4>
+                <ul>
+                    <li><a href="theories.html">感測器理論</a></li>
+                    <li><a href="structures.html">結構與原理</a></li>
+                    <li><a href="electronics.html">電子學</a></li>
+                    <li><a href="electromagnetics.html">電磁學</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>聯絡我們</h4>
+                <p>Email: contact@sensorhub.com</p>
+                <div style="margin-top: 1rem;">
+                    <i class="fab fa-github" style="margin-right: 1rem;"></i>
+                    <i class="fab fa-twitter" style="margin-right: 1rem;"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sensor Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
 </html>
