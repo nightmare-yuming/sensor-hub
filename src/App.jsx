@@ -13,7 +13,7 @@ import Electromagnetics from './pages/Electromagnetics';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sensor-hub">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
